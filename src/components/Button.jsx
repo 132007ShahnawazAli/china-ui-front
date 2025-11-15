@@ -1,26 +1,15 @@
-import React from 'react'
-import Link from 'next/link'
-
-function Button({ children, variant = 'primary', href, fullWidth = false }) {
-  const baseClasses = `inline-flex text-base items-center justify-center text-neutral-50 px-6 py-3 rounded-full transition-colors ${
-    variant === 'primary' 
-      ? 'bg-linear-to-b from-primary-400 to-primary-500 hover:bg-primary-300' 
-      : 'bg-neutral-500 hover:bg-neutral-600 text-neutral-900'
-  } ${fullWidth ? 'w-full' : ''}`
-  
-  if (href) {
+const Button = ({ children, onClick, className = "" }) => {
     return (
-      <Link href={href} className={baseClasses}>
-        {children}
-      </Link>
+      <button
+        onClick={onClick}
+        className={`px-6 py-2 text-white text-sm font-medium rounded-xl hover:opacity-90 transition-opacity ${className}`}
+        style={{
+          background: 'linear-gradient(180deg, #626668 0%, #282B2E 100%)'
+        }}
+      >
+        {children || "Start Fulfilling"}
+      </button>
     )
   }
   
-  return (
-    <button className={baseClasses}>
-      {children}
-    </button>
-  )
-}
-
-export default Button
+  export default Button
