@@ -18,7 +18,7 @@ function Hero() {
       <div className="relative w-full h-screen bg-white flex items-center justify-center overflow-hidden">
 
         {/* Background SVG fills entire hero */}
-        <div className="absolute -inset-6 translate-y-10 ">
+        <div className="absolute -inset-12 translate-y-10 ">
           <GridBg />
         </div>
 

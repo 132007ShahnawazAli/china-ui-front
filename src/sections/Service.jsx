@@ -74,7 +74,7 @@ const FeatureItem = ({ title, description, imageUrl }) => {
 
 function App() {
   return (
-    <div className='flex flex-col w-full h-fit py-16 px-16 gap-10 bg-neutral-50 font-medium'>
+    <div className='flex flex-col w-full h-fit py-16 px-14 gap-10 bg-neutral-50 font-medium'>
 
       <h2 className='text-5xl text-neutral-1000 tracking-[-0.04em] leading-[1.2]'>One-Stop Service with Us</h2>
 

@@ -1,6 +1,6 @@
 const Features = () => {
   return (
-    <div className="flex flex-col w-full h-fit px-6 md:px-16 bg-neutral-50 font-medium gap-12">
+    <div className="flex flex-col w-full h-fit px-6 md:px-14 bg-neutral-50 font-medium gap-12">
 
       {/* Header */}
       <div>

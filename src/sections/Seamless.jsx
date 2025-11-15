@@ -3,7 +3,7 @@ import { Globe, Truck } from "lucide-react";
 
 const Seamless = () => {
   return (
-    <div className="flex flex-col w-full h-fit px-6 md:px-16 py-12 md:py-20 bg-neutral-50 font-medium gap-12">
+    <div className="flex flex-col w-full h-fit px-6 md:px-14 py-12 md:py-20 bg-neutral-50 font-medium gap-12">
       {/* Header */}
       <div className="flex justify-between items-start gap-6">
         <h2 className="text-5xl text-[#14181A] tracking-[-0.04em] leading-[1.2] w-full">
