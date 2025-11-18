@@ -36,7 +36,7 @@ const faqs = [
 
 const Faqs = () => {
   return (
-    <section className="min-h-screen py-20 bg-[#FBFBFD] px-6">
+    <section className="relative bg-[#FBFBFD] w-full h-screen py-20 bg-[#FBFBFD] px-6">
       <div className="max-w-7xl mx-auto px-8 flex flex-col lg:flex-row gap-16 tracking-[-0.04em] leading-[1.2]">
 
         {/* Left Side */}

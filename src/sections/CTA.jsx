@@ -14,7 +14,7 @@ function CTA() {
   }
 
   return (
-    <div className="relative w-full bg-[#FBFBFD] overflow-hidden pb-32">
+    <div className="relative bg-[#FBFBFD] w-full overflow-hidden pb-32">
 
       {/* Main Content */}
       <div className="relative flex flex-col items-start text-left max-w px-14 mx-auto tracking-[-0.04em] leading-[1.2]">

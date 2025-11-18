@@ -46,7 +46,7 @@ const stats = [
 
 const FeatureItem = ({ title, description, imageUrl }) => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 relative bg-[#FBFBFD] w-full  ">
       {/* Image */}
       <div className="bg-primary-50 border-[.5px] border-neutral-500 w-full aspect-4/3 rounded-xl overflow-hidden">
         <div

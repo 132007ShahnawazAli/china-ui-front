@@ -7,6 +7,7 @@ import Hero from "@/sections/Hero";
 import Pricing from "@/sections/Pricing";
 import Seamless from "@/sections/Seamless";
 import Service from "@/sections/Service";
+import SignIn from "@/sections/SignIn";
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Faqs />
       <CTA />
       <Footer/>
+      <SignIn/>
     </>
   );
 }

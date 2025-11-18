@@ -3,7 +3,7 @@ import { Check } from "lucide-react"
 
 const Pricing = () => {
   return (
-    <div className="relative w-full min-h-screen py-16 bg-[#FBFBFD] flex flex-col items-center font-medium overflow-hidden">
+    <div className="relative pt-38 w-full min-h-screen py-16 bg-[#FBFBFD] flex flex-col items-center font-medium overflow-hidden">
 
       <div className="flex flex-col items-center text-center max-w-7xl mx-auto px-6 md:px-14">
 
