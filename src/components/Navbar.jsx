@@ -18,7 +18,8 @@ const navLinks = [
     dropdownItems: [
       { href: '/product-list', label: 'Product List (Dark)' },
       { href: '/product-list-light', label: 'Product List (Light)' },
-      { href: '/product-details', label: 'Product Details' },
+      { href: '/product-details', label: 'Product Details (Dark)' },
+      { href: '/product-details-light', label: 'Product Details (Light)' },
     ],
   },
   {
