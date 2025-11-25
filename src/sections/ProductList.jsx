@@ -11,7 +11,7 @@ export default function ProductListPage() {
   const products = [
     {
       id: 1,
-      image: "https://cbu01.alicdn.com/img/ibank/O1CN012SH1Dh1emfIFlQHXa_!!2220828763914-0-cib.jpg",
+      image: "/temp-products/1.jpg",
       brand: "MCHOSE",
       title: "G87 V2 E-Sports Custom Mechanical Keyboard",
       description: "G87 V2 Custom Mechanical Keyboard [0.125mm floating design, ARGB]",
@@ -22,7 +22,7 @@ export default function ProductListPage() {
     },
     {
       id: 2,
-      image: "https://cbu01.alicdn.com/img/ibank/O1CN011rvTMT1p6UQxGVppx_!!2151545311-0-cib.jpg",
+      image: "/temp-products/2.jpg",
       brand: "MCHOSE",
       title: "Ace 68 Air Magnetic Axis",
       description: "MCHOSE Ace 68 Air Magnetic Axis Mechanical Keyboard — 0.001mm precision, 0.08ms tournament latency",
@@ -33,7 +33,7 @@ export default function ProductListPage() {
     },
     {
       id: 3,
-      image: "https://cbu01.alicdn.com/img/ibank/O1CN01RdsHuu1v5T51LRzlx_!!4014326121-0-cib.jpg",
+      image: "/temp-products/3.webp",
       brand: "Lenovo",
       title: "Cool Wired Keyboard & Mouse Combo",
       description: "Lenovo wired keyboard + mouse combo for laptops and desktops",
@@ -44,7 +44,7 @@ export default function ProductListPage() {
     },
     {
       id: 4,
-      image: "https://cbu01.alicdn.com/img/ibank/O1CN01FZpSyK1I73lFO1Tln_!!2219965700845-0-cib.jpg_460x460q100.jpg_.webp",
+      image: "/temp-products/4.jpg",
       brand: "MCHOSE",
       title: "K99 V2 Custom Mechanical Keyboard",
       description: "MCHOSE K99 V2 custom mechanical keyboard with 8800mAh large battery",
