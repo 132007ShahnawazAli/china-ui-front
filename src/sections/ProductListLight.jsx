@@ -81,11 +81,11 @@ export default function ProductListLightPage() {
             {/* Search Bar */}
             <div className="hidden md:flex flex-1 max-w-xl mx-8">
               <div className="relative w-full">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-500" />
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-600" />
                 <input
                   type="text"
                   placeholder="Search products..."
-                  className="w-full bg-neutral-50 border border-neutral-300 rounded-lg pl-10 pr-4 py-2.5 text-sm text-neutral-900 placeholder:text-neutral-500 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-100 focus:bg-white transition-all"
+                  className="w-full bg-neutral-100 border border-neutral-400 rounded-lg pl-10 pr-4 py-2.5 text-sm text-neutral-900 placeholder:text-neutral-600 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-100 focus:bg-white transition-all"
                 />
               </div>
             </div>
