@@ -67,9 +67,9 @@ export default function ProductListLightPage() {
     : products.filter(p => p.supplier === activeSupplier);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-neutral-50">
       {/* NAVBAR */}
-      <nav className="border-b border-neutral-200 bg-white">
+      <nav className="border-b border-neutral-200 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -178,7 +178,7 @@ export default function ProductListLightPage() {
             <Link
               key={product.id}
               href={`/product-details?id=${product.id}`}
-              className="group flex flex-col bg-white border border-neutral-200 rounded-xl overflow-hidden hover:border-neutral-300 transition-colors duration-200"
+              className="group flex flex-col bg-neutral-50 border border-neutral-300 rounded-xl overflow-hidden hover:border-neutral-300 transition-colors duration-200"
             >
               {/* Image */}
               <div className="relative aspect-square bg-neutral-50 overflow-hidden">
@@ -204,7 +204,7 @@ export default function ProductListLightPage() {
               <div className="flex flex-col flex-1 p-4 gap-3">
                 {/* Supplier Badge & Rating */}
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-1.5 px-2 py-1 bg-neutral-50 border border-neutral-200 rounded-md">
+                  <div className="flex items-center gap-1.5 px-2 py-1 bg-neutral-50 border border-neutral-300 rounded-md">
                     <Image 
                       src={`/Suppliers/${product.supplier}.svg`} 
                       alt={product.supplier} 

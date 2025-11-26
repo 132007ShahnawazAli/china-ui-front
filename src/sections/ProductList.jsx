@@ -178,7 +178,7 @@ export default function ProductListPage() {
             <Link
               key={product.id}
               href={`/product-details?id=${product.id}`}
-              className="group flex flex-col bg-neutral-950/40 border border-neutral-900 rounded-xl overflow-hidden hover:border-neutral-800 transition-colors duration-200"
+              className="group flex flex-col bg-neutral-950/40 border border-neutral-950 rounded-xl overflow-hidden"
             >
               {/* Image */}
               <div className="relative aspect-square bg-neutral-900 overflow-hidden">
