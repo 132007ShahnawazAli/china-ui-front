@@ -63,6 +63,8 @@ const languages = [
 ]
 
 const profileMenuItems = [
+  { href: '/sign-in', label: 'Sign In', icon: User },
+  { href: '/sign-up', label: 'Sign Up', icon: User, divider: true },
   { href: '/profile', label: 'My Profile', icon: User },
   { href: '/orders', label: 'My Orders', icon: Package },
   { href: '/wishlist', label: 'Wishlist', icon: Heart },
@@ -126,15 +128,13 @@ function Navbar() {
         >
           <span>{link.label}</span>
           <ChevronDown
-            className={`w-5 h-5 transition-transform duration-300 ${
-              openDropdown === linkKey ? 'rotate-180' : 'rotate-0'
-            }`}
+            className={`w-5 h-5 transition-transform duration-300 ${openDropdown === linkKey ? 'rotate-180' : 'rotate-0'
+              }`}
           />
         </button>
         <div
-          className={`overflow-hidden transition-all duration-300 ${
-            openDropdown === linkKey ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-          }`}
+          className={`overflow-hidden transition-all duration-300 ${openDropdown === linkKey ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+            }`}
         >
           <div className="pl-4 pb-2 flex flex-col gap-0">
             {link.dropdownItems.map((item, index) => (
@@ -172,13 +172,12 @@ function Navbar() {
         </div>
       </>
     )
-  } 
+  }
 
   return (
     <div
-      className={`w-[91%] mx-auto h-fit flex flex-col z-50 transition-colors duration-500 fixed top-6 left-1/2 -translate-x-1/2 rounded-2xl ${
-        isMenuOpen || scrolled ? 'bg-transparent backdrop-blur-md' : 'bg-transparent'
-      }`}
+      className={`w-[91%] mx-auto h-fit flex flex-col z-50 transition-colors duration-500 fixed top-6 left-1/2 -translate-x-1/2 rounded-2xl ${isMenuOpen || scrolled ? 'bg-transparent backdrop-blur-md' : 'bg-transparent'
+        }`}
     >
       {/* Main Navbar */}
       <div className="w-full px-6 flex items-center justify-between py-2 md:py-4 border border-neutral-400 rounded-2xl font-medium">
@@ -225,9 +224,8 @@ function Navbar() {
             >
               <span className="text-sm text-[#14181A] font-medium">{selectedLanguage.label}</span>
               <ChevronDown
-                className={`w-4 h-4 transition-transform duration-200 ${
-                  openDropdown === 'language-desktop' ? 'rotate-180' : ''
-                }`}
+                className={`w-4 h-4 transition-transform duration-200 ${openDropdown === 'language-desktop' ? 'rotate-180' : ''
+                  }`}
               />
             </button>
             <DropdownMenu
@@ -239,9 +237,8 @@ function Navbar() {
                   <button
                     key={index}
                     onClick={() => handleLanguageChange(lang)}
-                    className={`w-full flex items-center gap-3 px-4 py-2.5 text-sm text-neutral-1000 hover:bg-neutral-100 transition-colors ${
-                      selectedLanguage.code === lang.code ? 'bg-primary-50 text-primary-600' : ''
-                    }`}
+                    className={`w-full flex items-center gap-3 px-4 py-2.5 text-sm text-neutral-1000 hover:bg-neutral-100 transition-colors ${selectedLanguage.code === lang.code ? 'bg-primary-50 text-primary-600' : ''
+                      }`}
                   >
                     <span className="text-lg">{lang.flag}</span>
                     <span>{lang.label}</span>
@@ -301,14 +298,12 @@ function Navbar() {
         >
           <div className="relative w-7 h-7 flex items-center justify-center">
             <TextAlignJustify
-              className={`absolute transition-all duration-300 ${
-                isMenuOpen ? 'opacity-0 scale-75 rotate-90' : 'opacity-100 scale-100 rotate-0'
-              }`}
+              className={`absolute transition-all duration-300 ${isMenuOpen ? 'opacity-0 scale-75 rotate-90' : 'opacity-100 scale-100 rotate-0'
+                }`}
             />
             <X
-              className={`absolute transition-all duration-300 ${
-                isMenuOpen ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-75 -rotate-90'
-              }`}
+              className={`absolute transition-all duration-300 ${isMenuOpen ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-75 -rotate-90'
+                }`}
             />
           </div>
         </div>
@@ -316,9 +311,8 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`flex flex-col md:hidden transition-all duration-500 overflow-hidden ${
-          isMenuOpen ? 'max-h-[1000px] opacity-100 pb-4' : 'max-h-0 opacity-0 pb-0'
-        }`}
+        className={`flex flex-col md:hidden transition-all duration-500 overflow-hidden ${isMenuOpen ? 'max-h-[1000px] opacity-100 pb-4' : 'max-h-0 opacity-0 pb-0'
+          }`}
       >
         <div className="flex flex-col items-start px-6 pt-2">
           <div className="flex flex-col items-start w-full text-base text-neutral-1000 font-medium gap-0 leading-[120%]">
@@ -372,27 +366,24 @@ function Navbar() {
                 <div className="flex items-center gap-2">
                   <span>{selectedLanguage.flag}</span>
                   <ChevronDown
-                    className={`w-5 h-5 transition-transform duration-300 ${
-                      openDropdown === 'language-mobile' ? 'rotate-180' : 'rotate-0'
-                    }`}
+                    className={`w-5 h-5 transition-transform duration-300 ${openDropdown === 'language-mobile' ? 'rotate-180' : 'rotate-0'
+                      }`}
                   />
                 </div>
               </button>
               <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openDropdown === 'language-mobile' ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                }`}
+                className={`overflow-hidden transition-all duration-300 ${openDropdown === 'language-mobile' ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
               >
                 <div className="pl-4 pb-2 flex flex-col gap-0">
                   {languages.map((lang, index) => (
                     <button
                       key={index}
                       onClick={() => handleLanguageChange(lang)}
-                      className={`w-full flex items-center gap-3 py-2.5 text-sm text-left transition-colors ${
-                        selectedLanguage.code === lang.code
-                          ? 'text-primary-600'
-                          : 'text-neutral-700 hover:text-primary-500 hover:pl-2'
-                      }`}
+                      className={`w-full flex items-center gap-3 py-2.5 text-sm text-left transition-colors ${selectedLanguage.code === lang.code
+                        ? 'text-primary-600'
+                        : 'text-neutral-700 hover:text-primary-500 hover:pl-2'
+                        }`}
                     >
                       <span className="text-lg">{lang.flag}</span>
                       <span>{lang.label}</span>
@@ -413,15 +404,13 @@ function Navbar() {
                   <span>Account</span>
                 </div>
                 <ChevronDown
-                  className={`w-5 h-5 transition-transform duration-300 ${
-                    openDropdown === 'profile-mobile' ? 'rotate-180' : 'rotate-0'
-                  }`}
+                  className={`w-5 h-5 transition-transform duration-300 ${openDropdown === 'profile-mobile' ? 'rotate-180' : 'rotate-0'
+                    }`}
                 />
               </button>
               <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openDropdown === 'profile-mobile' ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                }`}
+                className={`overflow-hidden transition-all duration-300 ${openDropdown === 'profile-mobile' ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
               >
                 <div className="pl-4 pb-2 flex flex-col gap-0">
                   {profileMenuItems.map((item, index) => {
